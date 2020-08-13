@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap');
+
+body {
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+}
+main p{
+    font-size: 1.3rem;
+}
+header {
+    display: block;
+    width: 100%;
+    background-color: #E60012;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid gray;
+}
+header img {
+    max-width: 10rem;
+}
+.background {
+    width: 100%;
+    background-image: url(../img/family-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position: top;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+}
+.background img {
+    display: block;
+    margin: auto;
+}
+
+nav {
+    margin-top: 0;
+    background-color: #E60012;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-left: 10rem;
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+nav li {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav li:hover {
+    text-decoration: underline;
+}
+
+.switch {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.switch img {
+    float: left;
+    max-width: 40rem;
+}
+.switch div {
+    padding-top: 2rem;
+}
+
+.controller {
+    clear: both;
+    background: rgb(126,202,240);
+    background: linear-gradient(90deg, rgba(126,202,240,1) 0%, rgba(101,164,199,1) 32%, rgba(65,119,168,1) 85%);
+    overflow: hidden;
+}
+.controller img {
+    padding-right: 5rem;
+    float: right;
+}
+.controller h2, .controller p {
+    text-align: center;
+    color: white;
+}
+.controller h2 {
+    font-size: 30px;
+    padding-top: 10rem;
+}
+.controller p {
+    font-size: 20px;
+}
+
+.infotext {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    clear: both;
+    width: 90%;
+    margin: auto;
+    
+}
+.infotext p {
+    margin-top: 0;
+    -webkit-column-width: 22rem;
+    column-width: 22rem;
+    column-count: 2;
+}
+.games {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.games-l iframe{
+    float: left;
+    margin-left: 5rem;
+    margin-right: 2rem;
+}
+.games-l {
+    clear: both;
+    background-color: #ECECEC;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+.games-r {
+    clear: both;
+    background-color: #ECECEC;
+    overflow: hidden;
+}
+.games-r iframe {
+    float: right;
+    margin-right: 5rem;
+    margin-left: 2rem;
+}
+.videotext-r {
+    padding-top: 3rem;
+    margin-right: 5rem;
+}
+.videotext-l {
+    padding-top: 3rem;
+    margin-left: 5rem;
+}
+
+footer {
+    background-color: #474646;
+    height: 10rem;
+}
+footer dl {
+    padding-top: 3rem;
+    color: #dadada;
+    display: table;
+    margin: auto;
+}
+
+footer a {
+    text-decoration: none;
+    color: #dadada;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+    .games-l iframe {
+        width: 420px; 
+        height: 240px;
+        margin-right: 3rem;
+    }
+    .games-r iframe {
+        width: 420px; 
+        height: 240px;
+        margin-left: 3rem;
+    }
+
+    .videotext {
+        padding-top: 1rem;
+        margin-right: 3rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    .switch img {
+        float: none;
+        display: block;
+        margin: auto;
+        max-width: 90%;
+    }
+    .switch {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .controller div {
+        display: block;
+        margin: auto;
+        max-width: 90%;
+    }
+    .controller div img {
+        float: none;
+        max-width: 80%;
+        display: block;
+        margin: auto;
+        padding-right: 0;
+    }
+    .controller h2 {
+        padding-top: 1rem;
+    }
+}
+@media screen and (max-width: 820px) {
+    header img {
+        display: block;
+        margin: auto;
+    }
+    nav {
+        top: 5rem;
+        margin-left: 0;
+    }
+    .switch {
+        padding: 0.5rem;
+    }
+    .games iframe {
+        float: none;
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+    .videotext-r {
+        width: 90%;
+        margin: auto;
+    }
+    .videotext-l {
+        width: 90%;
+        margin: auto;
+    }
+}
